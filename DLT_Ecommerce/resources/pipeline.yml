@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_ecommanalytics_etl:
+      name: EcommAnalytics_ETL
+      libraries:
+        - glob:
+            include: ../src/ecomm_e2e_ingestion/transformations/**
+      schema: ecomm_pipeline
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: ecomm_e2e
+      serverless: true
+      root_path: ../src/ecomm_e2e_ingestion

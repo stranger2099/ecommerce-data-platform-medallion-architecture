@@ -1,0 +1,17 @@
+resources:
+  jobs:
+    EcommAnalytics:
+      name: EcommAnalytics
+      tasks:
+        - task_key: IncrementalLoad_Generator
+          notebook_task:
+            notebook_path: ../src/syntheticloads.ipynb
+            source: WORKSPACE
+        - task_key: ETL
+          depends_on:
+            - task_key: IncrementalLoad_Generator
+          pipeline_task:
+            pipeline_id: f1d2e5a3-aa04-45ba-9e9f-99167c891eaf
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
