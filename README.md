@@ -66,7 +66,7 @@ The dataset is available at: https://data.mendeley.com/datasets/8gx2fvg2k6/5
 
 | Layer | Technologies |
 |-------|-------------|
-| **Cloud Platform** | Databricks (AWS/Azure/GCP) |
+| **Cloud Platform** | Databricks |
 | **Data Processing** | PySpark, Delta Lake, Delta Live Tables |
 | **Orchestration** | Databricks Workflows, DLT Pipelines |
 | **Language** | Python 3.10+ |
@@ -240,21 +240,11 @@ The platform implements comprehensive data quality checks:
 | **Silver** | Referential integrity, deduplication, SCD-2 consistency |
 | **Gold** | Aggregation validation, business rule compliance |
 
-## Performance Optimizations
-
-- **Photon Engine**: GPU-accelerated query execution
-- **Serverless Compute**: Auto-scaling for optimal resource utilization
-- **Delta Lake**: ACID transactions, time travel, Z-ordering
-- **Liquid Clustering**: Automatic data organization for query performance
-- **Streaming**: Incremental processing reduces computation costs
 
 ## Future Enhancements
 
 - [ ] Real-time streaming dashboard integration
-- [ ] Machine learning models for churn prediction
 - [ ] Automated alerting for anomaly detection
-- [ ] Data catalog integration (Unity Catalog)
-- [ ] Advanced forecasting models
 
 ## Contributing
 
