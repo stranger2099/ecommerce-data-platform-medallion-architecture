@@ -6,6 +6,15 @@
 
 This project demonstrates a complete modern data engineering solution using **Delta Live Tables (DLT)** on **Databricks** to process e-commerce supply chain data through a multi-layered medallion architecture. The platform delivers actionable business intelligence through RFM analysis, customer 360 views, and product performance metrics.
 
+## Dataset
+
+This project uses the **DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS** dataset:
+
+**Citation:**
+> Constante, Fabian; Silva, Fernando; Pereira, António (2019), "DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS", Mendeley Data, V5, doi: 10.17632/8gx2fvg2k6.5
+
+The dataset is available at: https://data.mendeley.com/datasets/8gx2fvg2k6/5
+
 ### Architecture
 
 ```
