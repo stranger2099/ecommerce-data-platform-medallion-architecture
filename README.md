@@ -264,12 +264,6 @@ This is a portfolio project demonstrating data engineering best practices. Sugge
 
 This project is for educational and portfolio purposes.
 
-## Contact
-
-**Project Maintainer**: [Your Name]
-**LinkedIn**: [Your LinkedIn Profile]
-**GitHub**: [Your GitHub Profile]
-**Email**: [Your Email]
 
 ---
 
