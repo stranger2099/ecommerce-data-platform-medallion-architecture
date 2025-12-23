@@ -19,32 +19,32 @@ The dataset is available at: https://data.mendeley.com/datasets/8gx2fvg2k6/5
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                     RAW DATA INGESTION                           │
-│              CSV Files → Cloud Files Format                      │
-└───────────────────────────┬──────────────────────────────────────┘
+│                     RAW DATA INGESTION                                       │
+│              CSV Files → Cloud Files Format                                 │
+└─────────────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│  BRONZE LAYER - Raw Data with Quality Checks                     │
-│  • Schema enforcement (61 fields)                                │
-│  • Data quality expectations                                     │
-│  • Streaming ingestion                                           │
-└───────────────────────────┬──────────────────────────────────────┘
+│  BRONZE LAYER - Raw Data with Quality Checks                                 │
+│  • Schema enforcement (61 fields)                                            │
+│  • Data quality expectations                                                 │
+│  • Streaming ingestion                                                       │
+└─────────────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│  SILVER LAYER - Cleansed & Conformed                             │
-│  ├─ Customers Dimension (SCD Type 2)                             │
-│  ├─ Products Dimension (SCD Type 2)                              │
-│  └─ Orders Fact Table                                            │
-└───────────────────────────┬──────────────────────────────────────┘
+│  SILVER LAYER - Cleansed & Conformed                                         │
+│  ├─ Customers Dimension (SCD Type 2)                                         │
+│  ├─ Products Dimension (SCD Type 2)                                          │
+│  └─ Orders Fact Table                                                        │
+└─────────────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│  GOLD LAYER - Analytics & Business Intelligence                  │
-│  ├─ Customer 360 (RFM Analysis, 8 Segments)                      │
-│  ├─ Product 360 (Performance Tiers, Health Scoring)              │
-│  └─ Enriched Orders (Denormalized Analytics View)                │
+│  GOLD LAYER - Analytics & Business Intelligence                              │
+│  ├─ Customer 360 (RFM Analysis, 8 Segments)                                  │
+│  ├─ Product 360 (Performance Tiers, Health Scoring)                          │
+│  └─ Enriched Orders (Denormalized Analytics View)                            │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
